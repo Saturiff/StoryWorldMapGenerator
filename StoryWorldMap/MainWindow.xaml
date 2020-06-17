@@ -1,0 +1,26 @@
+﻿<Window x:Class="StoryWorldMap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StoryWorldMap"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="GGG">
+        <Button Content="Normal Mode" HorizontalAlignment="Left" Margin="31,110,0,0" VerticalAlignment="Top" Width="93" Click="B_Normal_Click"/>
+        <Button Content="Create Mode" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="93" Click="B_Create_Click"/>
+        <Button Content="Build" HorizontalAlignment="Left" Margin="31,170,0,0" VerticalAlignment="Top" Width="93" Click="B_Build_Click"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="31,200,0,0" VerticalAlignment="Top" Width="93" Click="B_Clear_Click"/>
+
+        <Button Content="Edit Mode" HorizontalAlignment="Left" Margin="31,230,0,0" VerticalAlignment="Top" Width="93" Click="B_Edit_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="31,260,0,0" VerticalAlignment="Top" Width="93" Click="B_Delete_Click"/>
+
+        <Button Content="Save" HorizontalAlignment="Left" Margin="31,290,0,0" VerticalAlignment="Top" Width="93" Click="B_Save_Click"/>
+        <Canvas x:Name="C_DrawArea" Margin="142,17,18,16">
+            <Button x:Name="B_MapArea" Margin="0" Click="B_MapArea_Click" IsEnabled="False" HorizontalContentAlignment="Center"
+                    Width="{Binding ActualWidth, ElementName=C_DrawArea}"
+                    Height="{Binding ActualHeight, ElementName=C_DrawArea}"
+                    />
+        </Canvas>
+    </Grid>
+</Window>
